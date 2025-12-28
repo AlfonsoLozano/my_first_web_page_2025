@@ -13,7 +13,7 @@
     <meta name="description" content="" />
     <meta name="author" content="" />
 
-    <title>About Me - Porsche 911</title>
+    <title>Contact - Porsche 911</title>
 
     <!-- Stylesheet -->
     <link rel="stylesheet" type="text/css" href="../css/styles.css" />
@@ -33,28 +33,33 @@
         </div>
     </header>
     <main class="container color">
-        <aside class="img-right">
-            <img src="../images/yo.png" style="width: 300px; height: auto;">
-        </aside>
-        <div class="padding">
-            <h2>About me</h2>
-            <p>I am a computer science student who loves maths, programing and rock climbing</p>
+        <div class="padding text-center">
+            <h2>CONTACT</h2>
+            <form action="submit_form.php" method="post">
+                <div>
+                    <label for="name">Name:</label><br>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                </div>
+                <br>
+                <div>
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                </div>
+                <br>
+                <div>
+                    <label for="message">Message:</label><br>
+                    <textarea id="message" name="message" rows="5" placeholder="Write your message here" required></textarea>
+                </div>
+                <br>
+                <div>
+                    <button type="submit">Send</button>
+                </div>
+            </form>
         </div>
-        <div class="padding">
-            <h2>Resume</h2>
-            <ul>
-                <li>Life guard</li>
-                <li>Computer Science student</li>
-                <li>Python, C & HTML</li>
-                <li>Competitive sailing</li>
-            </ul>
-        </div>
-        <div class="padding">
-            <h2>Social</h2>
-            <a href="https://www.instagram.com/alfon.loz/"><img src="../images/iconoig.png" style="width: 80px; height: auto;"></a>
-        </div>
-
     </main>
+    
+    
+    
     <footer class="footer-section">
         <p>&copy; 2025 All Rights Reserved. Design by Alfonso Lozano</p>
     </footer>
